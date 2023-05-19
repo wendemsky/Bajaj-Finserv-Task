@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const outputContainer = document.getElementById("api-output");
 
     // Make POST request to /bfhl endpoint
-    fetch("/bfhl", {
+    fetch("https://testbfhl.herokuapp.com/bfhl", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
 
     // Make GET request to /bfhl endpoint
-    fetch("/bfhl")
+    fetch("https://testbfhl.herokuapp.com/bfhl")
         .then(response => response.json())
         .then(data => {
             // Process the response data

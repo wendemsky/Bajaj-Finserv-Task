@@ -5,7 +5,7 @@ const port = process.env.PORT || 3000;
 app.use(express.json());
 
 // Route: /bfhl | Method: POST
-app.post('/bfhl', (req, res) => {
+app.post('https://testbfhl.herokuapp.com/bfhl', (req, res) => {
     // Get the request data from the request body
     const { data } = req.body;
 
@@ -38,7 +38,7 @@ app.post('/bfhl', (req, res) => {
 
 
 // Route: /bfhl | Method: GET
-app.get('/bfhl', (req, res) => {
+app.get('https://testbfhl.herokuapp.com/bfhl', (req, res) => {
     // Create the response object
     const response = {
         operation_code: 1
